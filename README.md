@@ -1,6 +1,8 @@
 
 # DNOD : Deformable Neural Operators for Object Detection in SAR Images
-### [OpenReview](https://openreview.net/forum?id=tjBqPJdQ72)
+## This is the official code for the paper DNOD (TMLR 2025) -> [OpenReview](https://openreview.net/forum?id=tjBqPJdQ72)
+
+
 
 
 ## Installation
@@ -90,4 +92,11 @@ torchrun --standalone --nnodes=1 --nproc-per-node=$NUM_GPUS main.py
 
 </details>
 
-### This code is for the paper DNOD (TMLR 2025)
+  ```sh
+@article{dnodtmlr2025,
+  title={DNOD: Deformable Neural Operators for Object Detection in SAR Images},
+  author={GVS Mothish, J Rishi, Shobhit Kumar Shukla, Deepak N Subramani},
+  journal={Transactions on Machine Learning Research},
+  year={2025}
+}
+```
