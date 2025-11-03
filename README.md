@@ -1,5 +1,7 @@
 
 # DNOD : Deformable Neural Operators for Object Detection in SAR Images
+### [OpenReview](https://openreview.net/forum?id=tjBqPJdQ72)
+
 
 ## Installation
 
@@ -88,4 +90,4 @@ torchrun --standalone --nnodes=1 --nproc-per-node=$NUM_GPUS main.py
 
 </details>
 
-### This code is for the paper DNOD (Under Review TMLR)
+### This code is for the paper DNOD (TMLR 2025)
