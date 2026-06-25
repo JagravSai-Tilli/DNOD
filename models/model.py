@@ -1,5 +1,6 @@
 from models.backbone import build_backbone
 from .dnod_transformer import DNOD_transformer
+from ours.adaptive_merge import AdaptiveMerge
 import torch.nn as nn
 import torch
 import math
@@ -85,7 +86,7 @@ class DNOD(nn.Module):
                 in_channels = backbone.num_channels[_]
                 if _ == 0:
                     input_proj_list.append(nn.Sequential(
-                        nn.Conv2d(in_channels, hidden_dim, kernel_size=1, stride=2),
+                        AdaptiveMerge(in_channels, hidden_dim),
                         nn.GroupNorm(32, hidden_dim),
                     ))
                 if _ == 1:
